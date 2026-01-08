@@ -1,1 +1,1 @@
-void inference_bindings(py::module_ &m);
+void inference_bindings(py::module &m);

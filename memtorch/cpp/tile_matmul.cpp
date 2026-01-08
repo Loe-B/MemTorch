@@ -132,7 +132,7 @@ at::Tensor tile_matmul(at::Tensor mat_a_tiles, at::Tensor mat_a_tiles_map,
   return result;
 }
 
-void tile_matmul_bindings(py::module_ &m) {
+void tile_matmul_bindings(py::module &m) {
   // Binding without quantization support (transistor=True)
   m.def(
       "tile_matmul",

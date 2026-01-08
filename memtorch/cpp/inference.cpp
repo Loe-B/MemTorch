@@ -59,7 +59,7 @@ at::Tensor tiled_inference(at::Tensor input, int input_shape[2],
                      quant_method);
 }
 
-void inference_bindings(py::module_ &m) {
+void inference_bindings(py::module &m) {
   // Binding without quantization support (transistor=True)
   m.def(
       "tiled_inference",

@@ -20,3 +20,4 @@ venv/
 .idea/
 /memtorch.egg-info/
 *.csv
+.venv/

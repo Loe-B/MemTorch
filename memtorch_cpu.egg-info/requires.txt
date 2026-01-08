@@ -1,0 +1,10 @@
+numpy
+pandas
+scipy
+scikit-learn
+torch>=1.2.0
+torchvision
+matplotlib
+seaborn
+ipython
+lmfit

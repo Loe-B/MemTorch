@@ -4,7 +4,7 @@
 
 #include "quantize.h"
 
-void quantize_bindings(py::module_ &m) {
+void quantize_bindings(py::module &m) {
   // Binding for void quantize(at::Tensor tensor, int n_quant_levels, T min, T
   // max)
   m.def(

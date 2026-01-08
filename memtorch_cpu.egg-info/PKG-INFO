@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: memtorch-cpu
+Version: 1.1.6
+Summary: A Simulation Framework for Memristive Deep Learning Systems
+Home-page: https://github.com/coreylammie/MemTorch
+Author: Corey Lammie
+Author-email: coreylammie@jcu.edu.au
+License: GPL-3.0
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+Requires-Dist: torch>=1.2.0
+Requires-Dist: torchvision
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: ipython
+Requires-Dist: lmfit
+
+A Simulation Framework for Memristive Deep Learning Systems which integrates directly with the well-known PyTorch Machine Learning (ML) library

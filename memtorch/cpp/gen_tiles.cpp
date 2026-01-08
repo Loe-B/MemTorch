@@ -64,7 +64,7 @@ gen_tiles(at::Tensor tensor, int tile_shape[2], bool input,
   return std::tuple<at::Tensor, at::Tensor>{tiles, tiles_map};
 }
 
-void gen_tiles_bindings(py::module_ &m) {
+void gen_tiles_bindings(py::module &m) {
   m.def(
       "gen_tiles",
       [](at::Tensor tensor, std::tuple<int, float> tile_shape, bool input) {
@@ -77,7 +77,7 @@ void gen_tiles_bindings(py::module_ &m) {
       py::arg("tensor"), py::arg("tile_shape"), py::arg("input") = false);
 }
 
-void gen_tiles_bindings_gpu(py::module_ &m) {
+void gen_tiles_bindings_gpu(py::module &m) {
   m.def(
       "gen_tiles",
       [](at::Tensor tensor, std::tuple<int, float> tile_shape, bool input) {

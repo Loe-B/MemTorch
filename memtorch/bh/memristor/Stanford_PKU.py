@@ -206,10 +206,10 @@ class Stanford_PKU(Memristor):
                 + self.dg_dt(voltage_signal[t], current_) * self.time_series_resolution
             )
             self.gap = max(min(self.gap, self.gap_max), self.gap_min)
+            current_ = self.current(voltage_signal[t])
             if voltage_signal[t] != 0:
                 self.g = current_ / voltage_signal[t]
 
-            current_ = self.current(voltage_signal[t])
             if return_current:
                 current[t] = current_
 

@@ -1,4 +1,4 @@
-void gen_tiles_bindings(py::module_ &m);
+void gen_tiles_bindings(py::module &m);
 std::tuple<at::Tensor, at::Tensor>
 gen_tiles(at::Tensor tensor, int tile_shape[2], bool input,
           torch::TensorOptions tensor_options);

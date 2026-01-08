@@ -1,4 +1,4 @@
-void quantize_bindings(py::module_ &m);
+void quantize_bindings(py::module &m);
 
 template <class T>
 void quantize_element(T *tensor, int index, T *quant_levels,
